@@ -161,4 +161,5 @@ screenshot if you can.
 Made by the [T11N Team](https://t11n.dev/). Terminal emulation by
 [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) from Miguel de Icaza.
 
-Released under the [MIT License](LICENSE).
+T11N Terminal is proprietary software, free to download and use. See [LICENSE](LICENSE) for the terms.
+SwiftTerm is used under the MIT License.
