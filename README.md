@@ -8,7 +8,7 @@ Terminals, files, a code editor, Git and Claude Code, together in one lightweigh
 
 [**Download for macOS**](https://github.com/t11n-dev/t11n_terminal/releases/latest) · [t11n.dev](https://t11n.dev/) · [Report an issue](https://github.com/t11n-dev/t11n_terminal/issues)
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-1.0.1-blue)
 ![Platform](https://img.shields.io/badge/macOS-13%2B-lightgrey?logo=apple)
 ![Architecture](https://img.shields.io/badge/Apple%20Silicon%20%26%20Intel-universal-555)
 
@@ -26,7 +26,7 @@ Swift and AppKit, and uses about 40 MB of memory when idle with one shell.
 
 ## Install
 
-1. Download `T11n-Terminal-1.0.0-macOS.zip` from the [latest release](https://github.com/t11n-dev/t11n_terminal/releases/latest).
+1. Download `T11n-Terminal-1.0.1-macOS.zip` from the [latest release](https://github.com/t11n-dev/t11n_terminal/releases/latest).
 2. Unzip it and move **T11n Terminal.app** to **Applications**.
 3. Open the app. The first launch needs one extra step, described below.
 
@@ -71,7 +71,7 @@ You only need to do this once for each downloaded version.
 ### Projects and files
 
 - Every project opens as a tab, and recent projects stay in the sidebar.
-- File explorer with Git status colors.
+- File explorer with Git status colors. Right-click to create files and folders, or copy and paste them, also to and from Finder.
 - Fuzzy file search that respects `.gitignore`.
 
 ### Editor and viewers
@@ -105,6 +105,7 @@ limits.
 - Connect with a password, a key file, or your ssh-agent and `~/.ssh/config`.
 - Save connections to the sidebar. Each one opens in its own tab.
 - Passwords are stored only in the macOS Keychain.
+- Browse the server's files in the sidebar. The list follows `cd` where the server's shell reports its folder, and shares the terminal's signed-in connection.
 
 ### Appearance
 
