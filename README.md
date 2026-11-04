@@ -9,6 +9,7 @@ Terminals, files, a code editor, Git and Claude Code, together in one lightweigh
 [**Download for macOS**](https://github.com/t11n-dev/t11n_terminal/releases/latest) ·
 [Website](https://t11n.dev/) ·
 [Release notes](https://github.com/t11n-dev/t11n_terminal/releases) ·
+[Discussions](https://github.com/t11n-dev/t11n_terminal/discussions) ·
 [Report an issue](https://github.com/t11n-dev/t11n_terminal/issues)
 
 [![Latest release](https://img.shields.io/github/v/release/t11n-dev/t11n_terminal?label=version&color=blue)](https://github.com/t11n-dev/t11n_terminal/releases/latest)
@@ -202,8 +203,11 @@ and replace the app in **Applications**. Your settings, projects, SSH connection
 
 ## Support
 
-Found a bug or have an idea? [Open an issue](https://github.com/t11n-dev/t11n_terminal/issues) with your macOS
-version, the app version (**T11n Terminal → About**), the steps to reproduce it and a screenshot if you can.
+- **Questions and ideas:** ask in [Discussions](https://github.com/t11n-dev/t11n_terminal/discussions). Release
+  news is posted under Announcements.
+- **Bugs and feature requests:** [open an issue](https://github.com/t11n-dev/t11n_terminal/issues/new/choose) with
+  your macOS version, the app version (**T11n Terminal → About**), the steps to reproduce it and a screenshot if you
+  can.
 
 If T11N Terminal is useful to you, you can support its development on
 [Buy Me a Coffee](https://buymeacoffee.com/t11n). It's entirely optional, and the app stays free.
