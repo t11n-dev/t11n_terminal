@@ -1,0 +1,76 @@
+name: Bug report
+description: Something in T11N Terminal isn't working
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please check the [open issues](https://github.com/t11n-dev/t11n_terminal/issues) first, in case it's already reported.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a project
+        2. Click …
+        3. See …
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Terminal, shell or split panes
+        - Code editor or file viewers
+        - File explorer or file search
+        - Git / Source Control
+        - SSH
+        - Claude Code accounts or usage
+        - Appearance, sidebar or settings
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Shown in T11n Terminal → About, or Settings → About.
+      placeholder: "1.0.7"
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      placeholder: "macOS 15.4"
+    validations:
+      required: true
+  - type: dropdown
+    id: mac
+    attributes:
+      label: Mac
+      options:
+        - Apple Silicon (M1 or later)
+        - Intel
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or logs
+      description: Drag images here. Please remove passwords, keys, server addresses and other private details.
+  - type: checkboxes
+    id: latest
+    attributes:
+      label: Before you submit
+      options:
+        - label: I'm using the [latest release](https://github.com/t11n-dev/t11n_terminal/releases/latest), or the bug also happens there.
+          required: true
