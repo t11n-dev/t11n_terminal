@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Download the latest version
+    url: https://github.com/t11n-dev/t11n_terminal/releases/latest
+    about: Many problems are already fixed in the newest release.
+  - name: ☕ Buy me a coffee
+    url: https://buymeacoffee.com/t11n
+    about: Enjoying T11N Terminal? Support its development.
+  - name: Website
+    url: https://t11n.dev/
+    about: News and more from the T11N Team.
