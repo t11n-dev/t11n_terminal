@@ -6,17 +6,33 @@
 
 Terminals, files, a code editor, Git and Claude Code, together in one lightweight app.
 
-[**Download for macOS**](https://github.com/t11n-dev/t11n_terminal/releases/latest) · [t11n.dev](https://t11n.dev/) · [Report an issue](https://github.com/t11n-dev/t11n_terminal/issues)
+[**Download for macOS**](https://github.com/t11n-dev/t11n_terminal/releases/latest) ·
+[Website](https://t11n.dev/) ·
+[Release notes](https://github.com/t11n-dev/t11n_terminal/releases) ·
+[Report an issue](https://github.com/t11n-dev/t11n_terminal/issues)
 
-![Version](https://img.shields.io/badge/version-1.0.1-blue)
-![Platform](https://img.shields.io/badge/macOS-13%2B-lightgrey?logo=apple)
-![Architecture](https://img.shields.io/badge/Apple%20Silicon%20%26%20Intel-universal-555)
+[![Latest release](https://img.shields.io/github/v/release/t11n-dev/t11n_terminal?label=version&color=blue)](https://github.com/t11n-dev/t11n_terminal/releases/latest)
+![macOS 13+](https://img.shields.io/badge/macOS-13%2B-lightgrey?logo=apple)
+![Apple Silicon & Intel](https://img.shields.io/badge/Apple%20Silicon%20%26%20Intel-universal-555)
+[![Downloads](https://img.shields.io/github/downloads/t11n-dev/t11n_terminal/total?color=555)](https://github.com/t11n-dev/t11n_terminal/releases)
 
 <br>
 
 <img src="docs/screenshots/workspace.png" alt="T11N Terminal with a file explorer, code editor, terminal and Git panel" width="100%">
 
 </div>
+
+## Contents
+
+- [Why T11N Terminal](#why-t11n-terminal)
+- [Install](#install)
+- [Features](#features)
+- [Keyboard shortcuts](#keyboard-shortcuts)
+- [Privacy](#privacy)
+- [Updating and uninstalling](#updating-and-uninstalling)
+- [Troubleshooting](#troubleshooting)
+- [Support](#support)
+- [License and credits](#license-and-credits)
 
 ## Why T11N Terminal
 
@@ -26,11 +42,18 @@ Swift and AppKit, and uses about 40 MB of memory when idle with one shell.
 
 ## Install
 
-1. Download `T11n-Terminal-1.0.1-macOS.zip` from the [latest release](https://github.com/t11n-dev/t11n_terminal/releases/latest).
+**Requirements:** macOS 13 Ventura or later, on Apple Silicon or Intel.
+
+1. Download `T11n-Terminal-<version>-macOS.zip` from the
+   [latest release](https://github.com/t11n-dev/t11n_terminal/releases/latest).
 2. Unzip it and move **T11n Terminal.app** to **Applications**.
 3. Open the app. The first launch needs one extra step, described below.
 
-**Requirements:** macOS 13 Ventura or later, on Apple Silicon or Intel.
+Each release lists the SHA-256 checksum of its zip. To check your download:
+
+```bash
+shasum -a 256 ~/Downloads/T11n-Terminal-*-macOS.zip
+```
 
 ### Opening the app for the first time
 
@@ -61,17 +84,20 @@ You only need to do this once for each downloaded version.
 ### Terminal
 
 - Full xterm-256color and true-color support, powered by [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm).
-- Split panes right or down, each showing its folder and Git branch.
+- Split panes right or down, from the menu, the pane header or a right-click. Each pane shows its folder and
+  Git branch.
 - Colored zsh prompt with branch, change markers, exit status and slow-command timer.
-- Command highlighting as you type, and suggestions from your history. Press `Tab` or `→` to accept one.
+- Command highlighting as you type, and suggestions from your history. Press `Tab`, `→` or `End` to accept one.
 - Colored `ls`, `grep`, `diff` and `man`.
 - Your own setup comes first: oh-my-zsh, starship, powerlevel10k, zsh-syntax-highlighting and zsh-autosuggestions
   are detected and left alone.
 
 ### Projects and files
 
-- Every project opens as a tab, and recent projects stay in the sidebar.
-- File explorer with Git status colors. Right-click to create files and folders, or copy and paste them, also to and from Finder.
+- Every project opens as a tab, and recent projects stay in the sidebar. The Recent Projects and SSH lists can be
+  collapsed, and each scrolls on its own.
+- File explorer with Git status colors. Right-click to create, rename, copy, paste or trash files and folders, also to
+  and from Finder.
 - Fuzzy file search that respects `.gitignore`.
 
 ### Editor and viewers
@@ -83,9 +109,11 @@ You only need to do this once for each downloaded version.
 
 ### Git
 
-- Branch, upstream, ahead/behind counts, remote, stashes and last commit at a glance.
+- Branch, upstream, ahead/behind counts, remote and stashes at a glance.
 - Stage, unstage, discard, view diffs, commit, pull, push, fetch, and switch or create branches.
-- Full commit history with infinite scrolling. Click a commit to see its changes.
+- Commit history with a **branch graph**, author avatars and branch, remote and tag labels. It loads more as you
+  scroll.
+- Click a commit to see its message, author, parents and changed files, with a diff for each file.
 - **AI commit messages** written on your Mac by Apple Intelligence. No code leaves your computer.
   Requires macOS 26 or later with Apple Intelligence turned on.
 
@@ -93,19 +121,22 @@ You only need to do this once for each downloaded version.
 
 - See your **5-hour and weekly usage** for each account, refreshed every 15 minutes without using any quota.
 - Get a notification at 95% and 100% of a limit, and optionally resume waiting sessions when it resets.
-- Use several accounts, such as personal and work. Switching resumes the same session with its full history.
+- Use several accounts, such as personal and work. All accounts share one session history, so every session stays
+  available after you switch. Switching resumes the open session with its full history.
 - Sign-in uses Claude Code's own `claude auth login`. T11N Terminal never reads or stores your Claude credentials.
 
-Account switching is always manual and confirmed. T11N Terminal never rotates accounts automatically. Use multiple
-accounts only as [Anthropic's terms](https://www.anthropic.com/legal/consumer-terms) allow, not to get around usage
-limits.
+> [!NOTE]
+> Account switching is always manual and confirmed. T11N Terminal never rotates accounts automatically. Use
+> multiple accounts only as [Anthropic's terms](https://www.anthropic.com/legal/consumer-terms) allow, not to get
+> around usage limits.
 
 ### SSH
 
-- Connect with a password, a key file, or your ssh-agent and `~/.ssh/config`.
+- Connect with a password, a private key (choose the file or paste the key), or your ssh-agent and `~/.ssh/config`.
 - Save connections to the sidebar. Each one opens in its own tab.
 - Passwords are stored only in the macOS Keychain.
-- Browse the server's files in the sidebar. The list follows `cd` where the server's shell reports its folder, and shares the terminal's signed-in connection.
+- Browse the server's files in the sidebar. The list follows `cd` where the server's shell reports its folder, and
+  shares the terminal's signed-in connection.
 
 ### Appearance
 
@@ -142,6 +173,23 @@ limits.
 - AI commit messages are generated on your Mac.
 - SSH passwords stay in your macOS Keychain, and Claude credentials stay with Claude Code.
 
+## Updating and uninstalling
+
+**Update:** download the new zip from the [latest release](https://github.com/t11n-dev/t11n_terminal/releases/latest)
+and replace the app in **Applications**. Your settings, projects, SSH connections and Claude accounts are kept.
+
+**Uninstall:**
+
+1. Optional: in the Claude panel, use **Log out & remove** on any extra Claude accounts you added.
+2. Quit the app and move **T11n Terminal.app** to the Trash.
+3. To remove its data as well, delete these:
+
+| Data | Location |
+|---|---|
+| Settings, projects and saved SSH connections | `~/Library/Preferences/com.t11n.terminal.plist` |
+| Shell integration and Claude account folders | `~/Library/Application Support/T11nTerminal` |
+| Saved SSH passwords | Keychain Access, items named **T11n Terminal SSH** |
+
 ## Troubleshooting
 
 | Problem | Solution |
@@ -154,13 +202,15 @@ limits.
 
 ## Support
 
-Found a bug or have an idea? [Open an issue](https://github.com/t11n-dev/t11n_terminal/issues) with your macOS version, the steps to reproduce it and a
-screenshot if you can.
+Found a bug or have an idea? [Open an issue](https://github.com/t11n-dev/t11n_terminal/issues) with your macOS
+version, the app version (**T11n Terminal → About**), the steps to reproduce it and a screenshot if you can.
 
-## Credits
+If T11N Terminal is useful to you, you can support its development on
+[Buy Me a Coffee](https://buymeacoffee.com/t11n). It's entirely optional, and the app stays free.
 
-Made by the [T11N Team](https://t11n.dev/). Terminal emulation by
-[SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) from Miguel de Icaza.
+## License and credits
 
 T11N Terminal is proprietary software, free to download and use. See [LICENSE](LICENSE) for the terms.
-SwiftTerm is used under the MIT License.
+
+Made by the [T11N Team](https://t11n.dev/). Terminal emulation by
+[SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) from Miguel de Icaza, used under the MIT License.
