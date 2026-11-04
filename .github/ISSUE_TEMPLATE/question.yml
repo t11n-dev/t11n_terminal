@@ -1,0 +1,19 @@
+name: Question
+description: Ask how to do something in T11N Terminal
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The [README](https://github.com/t11n-dev/t11n_terminal#readme) covers installing, features, shortcuts and troubleshooting, and may already answer your question.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      placeholder: "1.0.7"
