@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest a new feature or an improvement
+labels: ["feature"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: Describe the problem or the workflow you have in mind, not only the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: How should it work?
+      description: How you imagine it in the app. Mockups or examples from other apps are welcome.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Terminal, shell or split panes
+        - Code editor or file viewers
+        - File explorer or file search
+        - Git / Source Control
+        - SSH
+        - Claude Code accounts or usage
+        - Appearance, sidebar or settings
+        - Other
