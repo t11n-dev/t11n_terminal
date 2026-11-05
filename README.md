@@ -97,8 +97,8 @@ You only need to do this once for each downloaded version.
 
 - Every project opens as a tab, and recent projects stay in the sidebar. The Recent Projects and SSH lists can be
   collapsed, and each scrolls on its own.
-- File explorer with Git status colors. Right-click to create, rename, copy, paste or trash files and folders, also to
-  and from Finder.
+- File explorer with Git status colors. It updates by itself when files change on disk. Right-click to create,
+  rename, copy, paste or trash files and folders, also to and from Finder.
 - Fuzzy file search that respects `.gitignore`.
 
 ### Editor and viewers
@@ -111,7 +111,8 @@ You only need to do this once for each downloaded version.
 ### Git
 
 - Branch, upstream, ahead/behind counts, remote and stashes at a glance.
-- Stage, unstage, discard, view diffs, commit, pull, push, fetch, and switch or create branches.
+- Stage, unstage, discard one file or all changes at once, view diffs, commit, pull, push, fetch, and switch or
+  create branches. Discarded new files go to the Trash.
 - Commit history with a **branch graph**, author avatars and branch, remote and tag labels. It loads more as you
   scroll.
 - Click a commit to see its message, author, parents and changed files, with a diff for each file.
